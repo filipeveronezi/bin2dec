@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bin2Dec | Filipe Veronezi</title>
-    <link rel="icon" href="./public/images/binary-code.png">
+    <link rel="icon" href="./public/images/binary-code.png" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
@@ -12,18 +12,28 @@
     />
 
     <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
   </head>
   <body>
-    <div class="container">
-      <label for="binary">Binary</label>
-      <input id="binary" name="binary" placeholder="type here..." pattern="[0-1]{8}" required />
+    <div class="container animate-up">
+      <label class="animate-up" for="binary" id="binary-label">Binary</label>
+      <input
+        id="binary"
+        name="binary"
+        placeholder="type here..."
+        class="animate-up"
+        required
+      />
 
-      <button type="submit" class="primary-button" onclick="bin2Dec()">
+      <button
+        type="button"
+        class="primary-button animate-up"
+        onclick="bin2Dec()"
+      >
         Convert
       </button>
-
-      <label for="result" id="result-label">Decimal</label>
-      <input id="result" name="result" disabled />
+      <label class="animate-up" for="result" id="result-label">Decimal</label>
+      <input class="animate-up" id="result" name="result" disabled />
     </div>
 
     <script src="./public/scripts/bin2dec.js"></script>

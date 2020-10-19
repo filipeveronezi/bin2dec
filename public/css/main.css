@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   color: black;
-  background: #F7F7F7;
+  background: #f7f7f7;
 
   display: flex;
   align-items: center;
@@ -26,35 +26,40 @@ button {
 }
 
 .container {
-position: absolute;
-width: 55.5rem;
-height: 45.5rem;
+  position: absolute;
+  width: 55.5rem;
+  height: 45.5rem;
 
-margin: auto;
+  margin: auto;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-flex-direction: column;
+  flex-direction: column;
 
-background: white;
-border: none;
-box-shadow: 9px 10px 15px -8px rgba(0,0,0,0.75);
-padding: 2rem;
+  background: white;
+  border: none;
+  box-shadow: 9px 10px 15px -8px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
 }
 
 .container input {
   border-radius: 20px;
   outline: none;
-  padding: .4rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   width: 50%;
   background: #f5f8fa;
   border: 1px solid #d3e2e5;
 }
 
 #binary {
-  margin: .5rem 0 2rem 0;
+  margin: 0.5rem 0 2rem 0;
+}
+
+#binary,
+#binary-label {
+  animation-delay: 50ms;
 }
 
 #result-label {
@@ -62,13 +67,18 @@ padding: 2rem;
 }
 
 #result {
-  margin: .5rem 0 0 0;
+  margin: 0.5rem 0 0 0;
+}
+
+#result,
+#result-label {
+  animation-delay: 150ms;
 }
 
 .container button {
   width: 20rem;
   margin: 2rem;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   background-color: #3cdaa3;
   color: white;
   border: none;
@@ -77,6 +87,7 @@ padding: 2rem;
   outline: none;
 
   transition: 200ms;
+  animation-delay: 100ms;
 }
 
 .container button:hover {
